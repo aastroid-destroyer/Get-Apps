@@ -3,7 +3,7 @@ import React from 'react'
 
 const Uninstall = ({app}) => {
     console.log(app)
-    const { title, ratingAvg, downloads, companyName, reviews } = app;
+    const { title, ratingAvg, downloads, companyName, reviews,size } = app;
     return (
         <div className="bg-white rounded-xl p-4 flex items-center justify-between w-10/12 mx-auto h-28">
             {/* App Info */}
@@ -37,8 +37,7 @@ const Uninstall = ({app}) => {
 
                         {/* Total Reviews */}
                         <div className="flex items-center gap-1">
-                            <MessageSquare className="text-purple-500 w-4 h-4" />
-                            <p className="text-xs font-semibold">{reviews}</p>
+                            <p className="text-xs font-semibold">{size} MB</p>
                         </div>
                     </div>
                 </div>
