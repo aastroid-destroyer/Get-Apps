@@ -21,7 +21,7 @@ const Navbar = () => {
                         <NavLink className="flex items-center gap-2" to="/installation"><Download size={18} /> Installation</NavLink>
                     </ul>
                 </div>
-                <div className='flex justify-between items-center gap-4'>
+                <div className='flex items-center'>
                     <img src={logo} alt="Logo" className='h-12 ' />
                     <Link to={"/home"} className="btn btn-ghost text-xl">Get Apps</Link>
                 </div>
