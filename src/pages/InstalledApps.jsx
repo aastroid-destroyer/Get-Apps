@@ -27,7 +27,7 @@ const InstalledApps = () => {
     })();
 
     return (
-        <div className='mt-20 mb-20'>
+        <div className='mt-20 mb-20  w-10/12 mx-auto py-4'>
             <h1 className='text-5xl text-center font-bold'>Installed Apps</h1>
             <p className='text-gray-400 text-center text-xl mt-3'>
                 Manage your installed apps

@@ -2,14 +2,14 @@ import { Download, Star } from 'lucide-react';
 import React from 'react';
 
 const Uninstall = ({ app, onUninstall }) => {
-    const { title, ratingAvg, downloads, size, id } = app;
+    const { title, ratingAvg, downloads, size, id,image } = app;
 
     return (
-        <div className="bg-white rounded-xl p-4 flex items-center justify-between w-10/12 mx-auto h-28">
+        <div className="bg-white rounded-xl p-4 flex items-center justify-between w-10/12 mx-auto ">
             {/* App Info */}
             <div className="flex items-center gap-4">
                 <div className="w-16 h-16 flex items-center justify-center bg-blue-50 rounded-xl">
-                    <img src="/alarm-icon.png" alt="App Icon" className="w-12 h-12 object-contain" />
+                    <img src={image} alt="App Icon" className="w-12 h-12 object-contain" />
                 </div>
                 <div>
                     <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
@@ -32,7 +32,7 @@ const Uninstall = ({ app, onUninstall }) => {
             {/* Uninstall Button */}
             <button
                 onClick={() => onUninstall(id)}
-                className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md font-medium text-sm transition"
+                className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md font-medium text-sm transition"
             >
                 Uninstall
             </button>
