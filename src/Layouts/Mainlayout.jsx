@@ -1,8 +1,7 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import { Outlet } from 'react-router'
-import Footer from '../components/Footer'
-import Trust from '../components/Trust'
+import React from 'react';
+import Navbar from '../components/Navbar';
+import { Outlet } from 'react-router';
+import Footer from '../components/Footer';
 
 const Mainlayout = () => {
   return (
@@ -13,7 +12,7 @@ const Mainlayout = () => {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
 
-export default Mainlayout
+export default Mainlayout;

@@ -1,8 +1,17 @@
 import { Download, Star } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 import Uninstall from '../components/Uninstall';
+import loadingImg from '/logo.png' 
 
 const InstalledApps = () => {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const delay = setTimeout(() => {
+            setLoading(false)
+        }, 1000);
+        return () => { clearTimeout(delay) }
+    }, [])
     const [sortOrder, setSortOrder] = useState('none');
     const [installedApps, setInstalledApps] = useState([]);
 
@@ -25,6 +34,21 @@ const InstalledApps = () => {
         if (sortOrder === "price-desc") return [...installedApps].sort((a, b) => b.size - a.size);
         return installedApps;
     })();
+    if (loading) {
+        return (
+            <div className="flex items-center justify-center h-screen bg-white">
+                <p className="text-7xl font-bold flex items-center gap-2">
+                    L
+                    <img
+                        src={loadingImg}
+                        alt="loading"
+                        className="w-12 h-12 animate-spin"
+                    />
+                    ading...
+                </p>
+            </div>
+        )
+    }
 
     return (
         <div className='mt-20 mb-20  w-10/12 mx-auto py-4'>

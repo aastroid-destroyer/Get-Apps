@@ -1,15 +1,24 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
+import { Link, useParams } from 'react-router';
 import useHooks from '../Hooks/useHooks';
 import { Download, MessageSquare, Star } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from 'recharts';
+import toast, { Toaster } from 'react-hot-toast';
+import loadingImg from '/logo.png'
 
 const ViewFullApp = () => {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const delay = setTimeout(() => {
+            setLoading(false)
+        }, 1000);
+        return () => { clearTimeout(delay) }
+    }, [])
     const { id } = useParams();
-    const { apps, loading, error } = useHooks() || {};
+    const { apps, error } = useHooks() || {};
 
     const [isInstalled, setIsInstalled] = useState(false);
-
     const SingleApp = apps?.find(p => p.id === Number(id));
 
     useEffect(() => {
@@ -26,9 +35,22 @@ const ViewFullApp = () => {
     }, [SingleApp]);
 
     if (error) return <div>Error: {error}</div>;
-    if (loading || !SingleApp) return <div>Loading................</div>;
 
-    const { title, ratingAvg, downloads, companyName, reviews, ratings, description, size,image } = SingleApp;
+
+    if (!SingleApp) return (
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 px-4">
+      <h1 className="text-6xl font-extrabold text-gray-800 mb-4">Apps Not Found Sorry</h1>
+      <p className="text-xl text-gray-600 mb-6">Oops! The page you're looking for doesn't exist.</p>
+      <Link
+        to="/"
+        className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+      >
+        Go Back Home
+      </Link>
+    </div>
+    );
+
+    const { title, ratingAvg, downloads, companyName, reviews, ratings, description, size, image } = SingleApp;
 
     const handleInstallBtn = () => {
         const existingData = localStorage.getItem('installApp');
@@ -46,25 +68,41 @@ const ViewFullApp = () => {
 
         const updatedList = [...existingList, SingleApp];
         localStorage.setItem('installApp', JSON.stringify(updatedList));
-        setIsInstalled(true); // update UI immediately
+        setIsInstalled(true);
+
+        toast.success('App Installed! ✅');
     };
+    if (loading) {
+        return (
+            <div className="flex items-center justify-center h-screen bg-white">
+                <p className="text-7xl font-bold flex items-center gap-2">
+                    L
+                    <img
+                        src={loadingImg}
+                        alt="loading"
+                        className="w-12 h-12 animate-spin"
+                    />
+                    ading...
+                </p>
+            </div>
+        )
+    }
 
     return (
-        <div className=" w-10/12 mx-auto py-4">
-            {/* White Card */}
+        <div className="w-10/12 mx-auto py-4">
+            <Toaster position="top-right" reverseOrder={false} />
+
             <div className="bg-white rounded-xl p-6 flex flex-col md:flex-row items-center gap-6 w-full">
-                {/* App Icon */}
-                <div className="w-24 h-24 flex items-center justify-center bg-blue-50 rounded-xl">
+                <div className="w-full md:w-48 h-48 flex items-center justify-center rounded-xl">
                     <img
                         src={image}
                         alt="App Icon"
-                        className="w-20 h-20 object-contain"
+                        className="w-full h-full object-contain rounded-xl bg-blue-50 p-5"
                     />
                 </div>
 
-                {/* App Info */}
                 <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900">{title}</h3>
+                    <h3 className="text-2xl font-semibold text-gray-900">{title}</h3>
                     <p className="text-sm text-gray-500 mb-4">
                         Developed by{" "}
                         <a href="#" className="text-indigo-600 hover:underline font-medium">
@@ -73,27 +111,24 @@ const ViewFullApp = () => {
                     </p>
 
                     <div className="flex flex-wrap gap-8 mb-5">
-                        {/* Downloads */}
                         <div className="flex items-center gap-2">
-                            <Download className="text-green-500 w-5 h-5" />
+                            <Download className="text-green-500 w-6 h-6" />
                             <div>
                                 <p className="text-xs text-gray-500">Downloads</p>
                                 <p className="font-bold text-gray-800 text-lg">{downloads}</p>
                             </div>
                         </div>
 
-                        {/* Average Ratings */}
                         <div className="flex items-center gap-2">
-                            <Star className="text-yellow-500 w-5 h-5" />
+                            <Star className="text-orange-500 w-6 h-6" />
                             <div>
                                 <p className="text-xs text-gray-500">Average Ratings</p>
                                 <p className="font-bold text-gray-800 text-lg">{ratingAvg}</p>
                             </div>
                         </div>
 
-                        {/* Total Reviews */}
                         <div className="flex items-center gap-2">
-                            <MessageSquare className="text-purple-500 w-5 h-5" />
+                            <MessageSquare className="text-purple-500 w-6 h-6" />
                             <div>
                                 <p className="text-xs text-gray-500">Total Reviews</p>
                                 <p className="font-bold text-gray-800 text-lg">{reviews}</p>
@@ -101,7 +136,6 @@ const ViewFullApp = () => {
                         </div>
                     </div>
 
-                    {/* Install Button */}
                     {isInstalled ? (
                         <button
                             disabled
@@ -120,7 +154,6 @@ const ViewFullApp = () => {
                 </div>
             </div>
 
-            {/* Ratings Chart Below White Card */}
             <div className="mt-6 w-full h-100 border-b py-18 border-gray-300">
                 <h4 className="text-gray-700 font-bold mb-2 text-2xl">Ratings</h4>
                 <ResponsiveContainer width="100%" height={250}>
@@ -138,8 +171,8 @@ const ViewFullApp = () => {
                 </ResponsiveContainer>
             </div>
 
-            <div>
-                <h1 className="font-bold text-2xl">Description</h1>
+            <div className="mt-6">
+                <h1 className="font-bold text-2xl mb-2">Description</h1>
                 <p className="font-light text-xl text-gray-500">{description}</p>
             </div>
         </div>

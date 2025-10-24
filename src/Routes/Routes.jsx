@@ -4,29 +4,35 @@ import Mainlayout from "../Layouts/Mainlayout";
 import AllApps from "../pages/AllApps";
 import ViewFullApp from "../pages/ViewFullApp";
 import InstalledApps from "../pages/InstalledApps";
+import NotFound from "../pages/NotFound";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Mainlayout/>,
-    children:[
+    element: <Mainlayout />,
+    errorElement:<NotFound/>,
+    children: [
       {
-        path:"/home",
-        element:<Home/>
+        index: true,
+        element: <Home />,
       },
       {
-        path:"/allapps",
-        element:<AllApps/>
+        path: "home",
+        element: <Home />,
       },
       {
-        path:"/appDetails/:id",
-        element:<ViewFullApp/>
+        path: "allapps",
+        element: <AllApps />,
       },
       {
-        path:"/installation",
-        element:<InstalledApps/>
-      }
-    ]
+        path: "appDetails/:id",
+        element: <ViewFullApp />,
+      },
+      {
+        path: "installation",
+        element: <InstalledApps />,
+      },
+    ],
   },
 ]);
 
