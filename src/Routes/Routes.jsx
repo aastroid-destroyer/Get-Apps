@@ -3,6 +3,7 @@ import Home from "../pages/Home";
 import Mainlayout from "../Layouts/Mainlayout";
 import AllApps from "../pages/AllApps";
 import ViewFullApp from "../pages/ViewFullApp";
+import InstalledApps from "../pages/InstalledApps";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path:"/appDetails/:id",
         element:<ViewFullApp/>
+      },
+      {
+        path:"/installation",
+        element:<InstalledApps/>
       }
     ]
   },

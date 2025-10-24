@@ -12,7 +12,28 @@ const ViewFullApp = () => {
     const SingleApp = apps?.find(p => p.id === Number(id));
     if (error) return <div>Error: {error}</div>;
     if (loading) return <div>Loading................</div>;
-    const { title, ratingAvg, downloads,companyName,reviews } = SingleApp;
+    const { title, ratingAvg, downloads, companyName, reviews } = SingleApp;
+
+
+    const handleInstallBtn = () => {
+        const existingData = localStorage.getItem('installApp');
+        let existingList = [];
+
+        try {
+            existingList = existingData ? JSON.parse(existingData) : [];
+            if (!Array.isArray(existingList)) existingList = [];
+        } catch (error) {
+            existingList = [];
+        }
+
+        const isDuplicate = existingList.some(p => p.id === SingleApp.id);
+        if (isDuplicate) return alert("This app is already installed!");
+
+        const updatedList = [...existingList, SingleApp];
+        localStorage.setItem('installApp', JSON.stringify(updatedList));
+    };
+
+
 
     return (
         <div className="bg-white rounded-xl p-6 flex flex-col md:flex-row items-center gap-6 w-10/12 mx-auto">
@@ -70,7 +91,7 @@ const ViewFullApp = () => {
                 </div>
 
                 {/* Install Button */}
-                <button className="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-md font-medium text-sm transition">
+                <button className="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-md font-medium text-sm transition" onClick={handleInstallBtn}>
                     Install Now (291 MB)
                 </button>
             </div>
