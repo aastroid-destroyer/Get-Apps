@@ -1,0 +1,662 @@
+[
+    {
+        "id": 1,
+        "image": "https://picsum.photos/seed/app1/300/300",
+        "title": "Pixel Painter",
+        "companyName": "ColorSoft Ltd.",
+        "description": "Unleash your creativity with intuitive drawing tools and vibrant colors.",
+        "size": 45,
+        "reviews": 1823,
+        "ratingAvg": 4.5,
+        "downloads": "1.2M",
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 50
+            },
+            {
+                "name": "2 star",
+                "count": 120
+            },
+            {
+                "name": "3 star",
+                "count": 300
+            },
+            {
+                "name": "4 star",
+                "count": 550
+            },
+            {
+                "name": "5 star",
+                "count": 803
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "image": "https://picsum.photos/seed/app2/300/300",
+        "title": "FitTrack Pro",
+        "companyName": "Active Labs",
+        "description": "Track workouts, calories, and progress towards your fitness goals.",
+        "size": 60,
+        "reviews": 954,
+        "ratingAvg": 4.3,
+        "downloads": "2M",
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 70
+            },
+            {
+                "name": "2 star",
+                "count": 110
+            },
+            {
+                "name": "3 star",
+                "count": 200
+            },
+            {
+                "name": "4 star",
+                "count": 300
+            },
+            {
+                "name": "5 star",
+                "count": 274
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "image": "https://picsum.photos/seed/app3/300/300",
+        "title": "NoteSpace",
+        "companyName": "Infinity Apps",
+        "description": "Organize your thoughts and ideas with a clean, minimal note-taking interface.",
+        "size": 25,
+        "reviews": 742,
+        "ratingAvg": 4.7,
+        "downloads": "1.5M",
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 20
+            },
+            {
+                "name": "2 star",
+                "count": 50
+            },
+            {
+                "name": "3 star",
+                "count": 130
+            },
+            {
+                "name": "4 star",
+                "count": 200
+            },
+            {
+                "name": "5 star",
+                "count": 342
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "image": "https://picsum.photos/seed/app4/300/300",
+        "title": "Soundify",
+        "companyName": "WaveWorks",
+        "description": "Discover new music every day, personalized for your taste.",
+        "size": 70,
+        "reviews": 3421,
+        "ratingAvg": 4.6,
+        "downloads": "5M",
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 180
+            },
+            {
+                "name": "2 star",
+                "count": 250
+            },
+            {
+                "name": "3 star",
+                "count": 500
+            },
+            {
+                "name": "4 star",
+                "count": 900
+            },
+            {
+                "name": "5 star",
+                "count": 1591
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "image": "https://picsum.photos/seed/app5/300/300",
+        "title": "StudyMate",
+        "companyName": "BrainUp Co.",
+        "description": "Plan, track, and master your study sessions efficiently.",
+        "size": 38,
+        "reviews": 1280,
+        "ratingAvg": 4.8,
+        "downloads": "3M",
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 30
+            },
+            {
+                "name": "2 star",
+                "count": 50
+            },
+            {
+                "name": "3 star",
+                "count": 100
+            },
+            {
+                "name": "4 star",
+                "count": 400
+            },
+            {
+                "name": "5 star",
+                "count": 700
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "image": "https://picsum.photos/seed/app6/300/300",
+        "title": "QuickBudget",
+        "companyName": "FinManage",
+        "description": "Track your expenses and savings with smart analytics.",
+        "size": 40,
+        "reviews": 560,
+        "ratingAvg": 4.2,
+        "downloads": "800K",
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 60
+            },
+            {
+                "name": "2 star",
+                "count": 80
+            },
+            {
+                "name": "3 star",
+                "count": 150
+            },
+            {
+                "name": "4 star",
+                "count": 150
+            },
+            {
+                "name": "5 star",
+                "count": 120
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "image": "https://picsum.photos/seed/app7/300/300",
+        "title": "PhotoTune",
+        "companyName": "Lensify",
+        "description": "Edit photos like a pro using AI-powered filters and adjustments.",
+        "size": 55,
+        "reviews": 1820,
+        "ratingAvg": 4.4,
+        "downloads": "4.2M",
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 100
+            },
+            {
+                "name": "2 star",
+                "count": 200
+            },
+            {
+                "name": "3 star",
+                "count": 350
+            },
+            {
+                "name": "4 star",
+                "count": 500
+            },
+            {
+                "name": "5 star",
+                "count": 670
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "image": "https://picsum.photos/seed/app8/300/300",
+        "title": "CalmZone",
+        "companyName": "MindEase",
+        "description": "Relax with guided meditation and calming music.",
+        "size": 48,
+        "reviews": 2340,
+        "ratingAvg": 4.9,
+        "downloads": "7M",
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 70
+            },
+            {
+                "name": "2 star",
+                "count": 90
+            },
+            {
+                "name": "3 star",
+                "count": 200
+            },
+            {
+                "name": "4 star",
+                "count": 500
+            },
+            {
+                "name": "5 star",
+                "count": 1480
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "image": "https://picsum.photos/seed/app9/300/300",
+        "title": "DailyQuotes",
+        "companyName": "Inspire Inc.",
+        "description": "Get a dose of motivation and positivity every morning.",
+        "size": 15,
+        "reviews": 740,
+        "ratingAvg": 4.5,
+        "downloads": "1.1M",
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 40
+            },
+            {
+                "name": "2 star",
+                "count": 60
+            },
+            {
+                "name": "3 star",
+                "count": 120
+            },
+            {
+                "name": "4 star",
+                "count": 250
+            },
+            {
+                "name": "5 star",
+                "count": 270
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "image": "https://picsum.photos/seed/app10/300/300",
+        "title": "CodePlay",
+        "companyName": "DevLabs",
+        "description": "Practice coding challenges and level up your programming skills.",
+        "size": 65,
+        "reviews": 2990,
+        "ratingAvg": 4.8,
+        "downloads": "5.5M",
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 110
+            },
+            {
+                "name": "2 star",
+                "count": 180
+            },
+            {
+                "name": "3 star",
+                "count": 300
+            },
+            {
+                "name": "4 star",
+                "count": 700
+            },
+            {
+                "name": "5 star",
+                "count": 1700
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "image": "https://picsum.photos/seed/app11/300/300",
+        "title": "TravelGo",
+        "companyName": "JetAway",
+        "description": "Plan trips, find hotels, and explore destinations worldwide.",
+        "size": 90,
+        "reviews": 4100,
+        "ratingAvg": 4.6,
+        "downloads": "8M",
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 200
+            },
+            {
+                "name": "2 star",
+                "count": 300
+            },
+            {
+                "name": "3 star",
+                "count": 500
+            },
+            {
+                "name": "4 star",
+                "count": 900
+            },
+            {
+                "name": "5 star",
+                "count": 2200
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "image": "https://picsum.photos/seed/app12/300/300",
+        "title": "MindMath",
+        "companyName": "BrainSpark",
+        "description": "Sharpen your brain with math puzzles and challenges.",
+        "size": 32,
+        "reviews": 1180,
+        "ratingAvg": 4.3,
+        "downloads": "1.8M",
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 70
+            },
+            {
+                "name": "2 star",
+                "count": 100
+            },
+            {
+                "name": "3 star",
+                "count": 230
+            },
+            {
+                "name": "4 star",
+                "count": 320
+            },
+            {
+                "name": "5 star",
+                "count": 460
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "image": "https://picsum.photos/seed/app13/300/300",
+        "title": "WeatherFlow",
+        "companyName": "SkyTech",
+        "description": "Accurate forecasts and real-time radar for your location.",
+        "size": 50,
+        "reviews": 3100,
+        "ratingAvg": 4.2,
+        "downloads": "6.5M",
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 220
+            },
+            {
+                "name": "2 star",
+                "count": 340
+            },
+            {
+                "name": "3 star",
+                "count": 500
+            },
+            {
+                "name": "4 star",
+                "count": 800
+            },
+            {
+                "name": "5 star",
+                "count": 1240
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "image": "https://picsum.photos/seed/app14/300/300",
+        "title": "ChefBook",
+        "companyName": "Cookify",
+        "description": "Discover new recipes, meal plans, and cooking inspiration.",
+        "size": 68,
+        "reviews": 2870,
+        "ratingAvg": 4.7,
+        "downloads": "3.9M",
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 130
+            },
+            {
+                "name": "2 star",
+                "count": 200
+            },
+            {
+                "name": "3 star",
+                "count": 400
+            },
+            {
+                "name": "4 star",
+                "count": 700
+            },
+            {
+                "name": "5 star",
+                "count": 1440
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "image": "https://picsum.photos/seed/app15/300/300",
+        "title": "LangLearn",
+        "companyName": "Eduverse",
+        "description": "Learn new languages with interactive lessons and quizzes.",
+        "size": 75,
+        "reviews": 3540,
+        "ratingAvg": 4.8,
+        "downloads": "6M",
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 120
+            },
+            {
+                "name": "2 star",
+                "count": 170
+            },
+            {
+                "name": "3 star",
+                "count": 300
+            },
+            {
+                "name": "4 star",
+                "count": 800
+            },
+            {
+                "name": "5 star",
+                "count": 2150
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "image": "https://picsum.photos/seed/app16/300/300",
+        "title": "ShopMate",
+        "companyName": "EcomFlow",
+        "description": "Compare prices and shop smarter from thousands of stores.",
+        "size": 82,
+        "reviews": 5230,
+        "ratingAvg": 4.1,
+        "downloads": "10M",
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 400
+            },
+            {
+                "name": "2 star",
+                "count": 500
+            },
+            {
+                "name": "3 star",
+                "count": 900
+            },
+            {
+                "name": "4 star",
+                "count": 1500
+            },
+            {
+                "name": "5 star",
+                "count": 1930
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "image": "https://picsum.photos/seed/app17/300/300",
+        "title": "TaskHero",
+        "companyName": "FocusHub",
+        "description": "Stay productive with task tracking and habit-building tools.",
+        "size": 35,
+        "reviews": 1450,
+        "ratingAvg": 4.4,
+        "downloads": "2.2M",
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 90
+            },
+            {
+                "name": "2 star",
+                "count": 130
+            },
+            {
+                "name": "3 star",
+                "count": 240
+            },
+            {
+                "name": "4 star",
+                "count": 400
+            },
+            {
+                "name": "5 star",
+                "count": 590
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "image": "https://picsum.photos/seed/app18/300/300",
+        "title": "CryptoTrack",
+        "companyName": "BlockSoft",
+        "description": "Monitor your crypto portfolio with real-time updates and alerts.",
+        "size": 58,
+        "reviews": 1970,
+        "ratingAvg": 4.3,
+        "downloads": "3.5M",
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 140
+            },
+            {
+                "name": "2 star",
+                "count": 200
+            },
+            {
+                "name": "3 star",
+                "count": 400
+            },
+            {
+                "name": "4 star",
+                "count": 550
+            },
+            {
+                "name": "5 star",
+                "count": 680
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "image": "https://picsum.photos/seed/app19/300/300",
+        "title": "MusicMixer",
+        "companyName": "TuneCraft",
+        "description": "Create your own beats and mix songs with professional tools.",
+        "size": 90,
+        "reviews": 3820,
+        "ratingAvg": 4.6,
+        "downloads": "7.8M",
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 180
+            },
+            {
+                "name": "2 star",
+                "count": 240
+            },
+            {
+                "name": "3 star",
+                "count": 400
+            },
+            {
+                "name": "4 star",
+                "count": 900
+            },
+            {
+                "name": "5 star",
+                "count": 2100
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "image": "https://picsum.photos/seed/app20/300/300",
+        "title": "GameBoost",
+        "companyName": "NextGen Studios",
+        "description": "Optimize your device for smoother gaming performance.",
+        "size": 65,
+        "reviews": 2540,
+        "ratingAvg": 4.5,
+        "downloads": "4.5M",
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 160
+            },
+            {
+                "name": "2 star",
+                "count": 190
+            },
+            {
+                "name": "3 star",
+                "count": 310
+            },
+            {
+                "name": "4 star",
+                "count": 700
+            },
+            {
+                "name": "5 star",
+                "count": 1180
+            }
+        ]
+    }
+]
